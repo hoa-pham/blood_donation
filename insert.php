@@ -35,6 +35,7 @@ if(isset($_POST['delete'])) {
         echo "Records deleted successfully.";
     } else{
         echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+        echo "User does not exist in the database";
     }
 }
 

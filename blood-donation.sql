@@ -113,7 +113,7 @@ DEFAULT CHARACTER SET = latin1;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `blood_donation`.`blood` (
   `blood_type` VARCHAR(10) NOT NULL,
-  `id` INT(15) NOT NULL,
+  `id` INT(15) NOT NULL AUTO_INCREMENT,
   `blood_status` VARCHAR(5) NOT NULL,
   `fk_nurse_id` INT(15) NOT NULL,
   `fk_lab_tech_id` INT(15) NOT NULL,
